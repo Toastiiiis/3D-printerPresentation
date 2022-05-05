@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>3D Printer Presentation</title>
+
+  <link rel="stylesheet" href="dist/reset.css" />
+  <link rel="stylesheet" href="dist/reveal.css" />
+  <link rel="stylesheet" href="dist/theme/blood.css" />
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  <style>
+    .make-it-pop h1,
+    h2,
+    h3,
+    h4 {
+      color: #a53860 !important;
+    }
+
+    .make-it-pop h4.special-heading,
+    h3.special-heading,
+    h2.special-heading {
+      color: #e2105d !important;
+    }
+
+    .make-it-pop h5 {
+      font-size: 2rem !important;
+    }
+
+    .make-it-pop .smaller {
+      font-size: 1.75rem !important;
+    }
+
+    div.slides>section.video-slide {
+      width: 100vw;
+      height: 100vh;
+      transform: translate(-50%, -50%) scale(1);
+      inset: 0 0 0 0;
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 0.5em;
+      z-index: 5;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+    }
+
+    .col {
+      flex: 1;
+      display: flex;
+      margin: 1rem;
+      margin-top: 0;
+    }
+
+    .verti {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .verti-multi {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p.img-label {
+      font-size: 1rem;
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+
+    img.labelled-img {
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+      height: 52vh;
+      width: auto;
+    }
+
+    .flex-70 {
+      flex-basis: 70%;
+    }
+
+    .flex-60 {
+      flex-basis: 60%;
+    }
+
+    .flex-40 {
+      flex-basis: 40%;
+    }
+
+    .flex-30 {
+      flex-basis: 30%;
+    }
+
+    img.labelled-img-30perc {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-background-image="presentation 3D printers/title.jpg" data-state="make-it-pop">
+        <h2>To be viewed in full screen (F11) in Firefox</h2>
+        <p><br /></p>
+      </section>
+      <section data-background-image="presentation 3D printers/title.jpg" data-state="make-it-pop">
+        <h1>3D printing</h1>
+        <p><br /></p>
+      </section>
+      <section data-state="make-it-pop">
+        <h2>What is 3D printing</h2>
+        <ul>
+          <li>Procress of additive manufacturing</li>
+          <ul>
+            <li>Adding material layer by layer to create a 3D object</li>
+          </ul>
+          <li>
+            Allows for creation of a nearly unlimited amount of 3D structures
+          </li>
+          <li>Used in personal and commercial settings</li>
+        </ul>
+      </section>
+      <section data-state="make-it-pop">
+        <h3>From model to object</h3>
+        <section data-state="make-it-pop">
+          <h4 class="special-heading">Modelling</h4>
+          <p>
+            A 3D object is modelled using software. <br />
+            Objects consist of hundreds of interlinked faces, vertices and
+            edges.
+          </p>
+          <br />
+          <h5>Software commonly used:</h5>
+          <div class="smaller">
+            Fusion 360, Auto CAD <br />
+            Tinkercad, Blender
+          </div>
+        </section>
+        <section>
+          <img data-src="presentation 3D printers/Modelling.png" class="labelled-img" />
+          <p class="img-label">[1] 3D Modelling in Blender</p>
+        </section>
+        <section data-state="make-it-pop">
+          <h4 class="special-heading">Slicing</h4>
+          <p>
+            The modelled 3D object is turned into g-code, which 3D printers
+            can interpret. <br />G-code is a text document full of
+            coordinates, understood by the printer.
+          </p>
+          <br />
+          <h5>Software commonly used:</h5>
+          <div class="smaller">
+            Ultimaker Cura, PrusaSlicer <br />
+            Simplify3D, OctoPrint
+          </div>
+        </section>
+        <section>
+          <img data-src="presentation 3D printers/Slicing.PNG" class="labelled-img" />
+          <p class="img-label">[2] Slicing in Ultimaker Cura</p>
+        </section>
+        <section data-state="make-it-pop">
+          <h4 class="special-heading">Printing</h4>
+          <p>
+            Following the g-code, the printer will move on and x,y and z axis,
+            layering filament in the paths specified by the g-code.
+          </p>
+          <h5>Popular beginner printers:</h5>
+          <div class="smaller">
+            Prusa Mini+, Creality Ender 3 <br />
+            Anycubic Mega Zero
+          </div>
+        </section>
+        <section data-state="make-it-pop">
+          <img data-src="presentation 3D printers/Printing.jpeg" class="labelled-img" />
+          <p class="img-label">[3] Printing on a Creality Ender 3</p>
+        </section>
+      </section>
+      <section class="video-slide" data-background-iframe="https://www.youtube.com/embed/m_QhY1aABsE"
+        data-background-interactive>
+        <p class="attribution" style="transform: translate(95.5%,1050%);">{1}
+          Baby Groot - 3D Printing Time Lapse</p>
+      </section>
+      <section data-state="make-it-pop">
+        <section data-state="make-it-pop">
+          <h3>Sounds simple, right?</h3>
+        </section>
+        <section data-state="make-it-pop">
+          <h4 class="special-heading">
+            Before printing can begin, several steps need to be taken
+          </h4>
+          <ul></ul>
+        </section>
+        <section data-state="make-it-pop" class="half-n-half">
+          <h3>Levelling the printing bed</h3>
+          <div class="container">
+            <div class="col flex-70">
+              <div class="verti">
+                <p>
+                  The <span style="color: #c54b78">print bed</span> needs to
+                  be readjusted using the
+                  <span style="color: #ff68a0">adjustment screws</span> to
+                  ensure proper adhesion of the print.
+                </p>
+              </div>
+            </div>
+            <div class="col flex-30">
+              <div class="verti-multi">
+                <img data-src="presentation 3D printers/Levelling.jpg" class="labelled-img-30perc" />
+                <p class="img-label">[4] 3D printer anatomy</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-state="make-it-pop">
+          <h3>Heating the nozzle</h3>
+          <div class="container">
+            <div class="col flex-70">
+              <div class="verti-multi">
+                <p>
+                  The nozzle must be heated to the temperatures at which it
+                  can melt the filament and press it through the nozzle,
+                  creating a layer.
+                </p>
+                <h5>Common nozzle temperatures used:</h5>
+                <div class="smaller">
+                  ABS: 230-260 °C <br />
+                  PETG: 210-250 °C <br />
+                  Nylon: 180-260 °C <br />
+                  PLA: 190-220°C
+                </div>
+              </div>
+            </div>
+            <div class="col flex-30">
+              <div class="verti-multi">
+                <img data-src="presentation 3D printers\Nozzle.jpeg" class="labelled-img-30perc" />
+                <p class="img-label">[5] 3D printer nozzle</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-state="make-it-pop">
+          <h3>Heating the bed</h3>
+          <div class="container">
+            <div class="col flex-70">
+              <div class="verti-multi">
+                <p>
+                  The <span style="color: #c54b78">print bed</span> must be
+                  heated to 60-85°C in order to allow the bottom layer of the
+                  Filament to stay warm and adhere to the bed.
+                </p>
+              </div>
+            </div>
+            <div class="col flex-30">
+              <div class="verti-multi">
+                <img data-src="presentation 3D printers/Heating Bed.jpg" class="labelled-img-30perc" />
+                <p class="img-label">[6] 3D printer bed</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section data-state="make-it-pop">
+        <h3>Common procedures</h3>
+        <section data-state="make-it-pop">
+          <h4 class="special-heading">FDM - Fused Deposition Modeling</h4>
+          <div class="container">
+            <div class="col flex-60">
+              <div class="verti-multi">
+                <p>
+                  A procress which extrudes molten plastic from a nozzle,
+                  layering it until the part is completed. <br />Used by
+                  beginners and professionals alike
+                </p>
+              </div>
+            </div>
+            <div class="col flex-40">
+              <div class="verti-multi">
+                <img data-src="presentation 3D printers/FDM.jpg" class="labelled-img-30perc" />
+                <p class="img-label">[7] FDM printer</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-state="make-it-pop">
+          <h4 class="special-heading">SLA - Stereolithography</h4>
+          <div class="container">
+            <div class="col flex-60">
+              <div class="verti-multi">
+                <p>
+                  A process which uses artifical resin that is hardened in
+                  layers by shooting a light/laser one coordinate at a time at
+                  the screen seperating resin and laser.
+                </p>
+              </div>
+            </div>
+            <div class="col flex-40">
+              <div class="verti-multi">
+                <img data-src="presentation 3D printers/SLA.jpg" class="labelled-img-30perc" />
+                <p class="img-label">[8] SLA printer</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-state="make-it-pop">
+          <h4 class="special-heading">DLP - Digital Light Processing</h4>
+          <div class="container">
+            <div class="col flex-60">
+              <div class="verti-multi">
+                <p>
+                  A process similar to SLA, with the key difference being that
+                  each layer is hardened as a whole using a digital screen
+                  instead of a laser shooting individual coordinates
+                </p>
+              </div>
+            </div>
+            <div class="col flex-40">
+              <div class="verti-multi">
+                <img data-src="presentation 3D printers/DLP.jpg" class="labelled-img-30perc" />
+                <p class="img-label">[9] DLP printer</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section data-state="make-it-pop">
+        <h3>Kinds of Filaments</h3>
+        <section data-state="make-it-pop">
+          <h4>PLA</h4>
+          <p>
+            PLA is the filament of choice for most FDM printers, as it
+            features high strength and stiffness as well as a low melting
+            point.
+          </p>
+          <h4>ABS</h4>
+          <p>
+            ABS is used for its high temperature resistance (-20 - 80°C) and
+            great strength.
+          </p>
+        </section>
+        <section data-state="make-it-pop">
+          <h4>Nylon</h4>
+          <p>Nylon is used due to it's high flexbility and durability.</p>
+          <h4>PETG</h4>
+          <p>
+            PETG sees use in robotics as it combines strength and wear
+            resistance.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h3>The future of 3D printing</h3>
+        <h4>Metal printing</h4>
+        <p>
+          Printing with metal is currently undergoing tests and slowly being
+          adopted into industry.
+        </p>
+        <span style="float: left"><b>It offers advantages such as:</b></span>
+        <ul>
+          <li>Extremely high strength</li>
+          <li>
+            Minimal material waste in comparism to subtractive processes
+          </li>
+          <li>Extended geometrical capabilities</li>
+        </ul>
+      </section>
+      <section class="video-slide" data-background-iframe="https://www.youtube.com/embed/lnE1om0KM5c"
+        data-background-interactive>
+        <p class="attribution" style="transform: translate(45%,1050%);">{2} 3D Printing an INSANE Steel Part that's
+          IMPOSSIBLE to Make on a CNC Machine</p>
+      </section>
+      <section>
+        <section>
+          <h4>Concrete printing</h4>
+          <p>
+            3D printing with concrete is currently being experimented with and
+            has been used for "printing" houses
+          </p>
+          <span><b>Sadly it is nowhere close to being viable due to:</b></span>
+          <div class="smaller">
+            <ul>
+              <li>Manual finishing being required</li>
+              <li>Long setup time</li>
+              <li>High equipment cost</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      </section>
+      <section class="video-slide" data-background-iframe="https://www.youtube.com/embed/5IxVPpkkWXI"
+        data-background-interactive>
+        <p class="attribution" style="transform: translate(74%,1050%);">{3} 3D Printed Concrete House, Printed in 48
+          hours</p>
+      </section>
+      <section>
+        <h3>Conclusion</h3>
+        <p>
+          Overall, 3D printing offers many useful features at costs as low as
+          150€:
+        </p>
+        <ul>
+          <li>Easy use</li>
+          <li>Cheap, unattended prototyping</li>
+          <li>Limits only set by your own imagination</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Attribution</h3>
+        <section data-state="make-it-pop" style="top: 200px">
+          <h4>Information</h4>
+          <div class="verti-multi">
+            <ul style="font-size: 1.1rem !important">
+              <li>
+                Wiseman Raymond, Wofür braucht man eigentlich einen
+                3D-Drucker?. 24.04.2014 from
+                https://www.faz.net/aktuell/technik-motor/digital/wofuer-braucht-man-eigentlich-einen-3d-drucker-12901734.html
+              </li>
+              <li>
+                Dusold Julia, Wofür die Industrie 3D-Druck am häufigsten
+                nutzt. 26.11.2020 from
+                https://www.produktion.de/technik/wofuer-die-industrie-3d-druck-am-haeufigsten-nutzt-120.html
+              </li>
+              <li>
+                Hühn Silvia, Kompakte Übersicht aller 3D-Druck-Verfahren.
+                03.02.2020 from
+                https://www.ingenieur.de/technik/fachbereiche/3d-druck/kompakte-uebersicht-aller-3d-druck-verfahren/
+              </li>
+              <li>
+                Hay Zachary, Best 3D Printing Temperatures for PLA, TPU, ABS,
+                & More. 14.03.2021 from
+                https://all3dp.com/2/the-best-printing-temperature-for-different-filaments/
+              </li>
+              <li>
+                Varotsis Alkaios, Introduction to metal 3D printing. Unbekannt
+                from
+                https://www.hubs.com/knowledge-base/introduction-metal-3d-printing/
+              </li>
+              <li>
+                Kolirin Lianne, A boulder-shaped house made from 3D-printed
+                concrete is ready for its first tenants. 30.04.2021 from
+                https://edition.cnn.com/style/article/3d-printed-house-scli-intl/index.html
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section data-state="make-it-pop">
+          <h4>Images</h4>
+          <ul style="font-size: 1.1rem !important">
+            <li>
+              Title image: ZMorph3D, Printer Technology. 20.06.2019 from
+              https://pixabay.com/photos/printer-technology-3d-printer-4348150/
+            </li>
+            <li>
+              [1]: Sachs Sebastian, Modelling. 31.03.2022 from
+              https://github.com/Toastiiiis/3D-printerPresentation/tree/main/presentation%203D%20printers
+            </li>
+            <li>
+              [2]: Sachs Sebastian, Slicing. 31.03.2022 from
+              https://github.com/Toastiiiis/3D-printerPresentation/tree/main/presentation%203D%20printers
+            </li>
+            <li>
+              [3]: Sachs Sebastian, Printing. 31.03.2022 from
+              https://github.com/Toastiiiis/3D-printerPresentation/tree/main/presentation%203D%20printers
+            </li>
+            <li>
+              [4]: Altered version of: New Data Services, 3D print in
+              progress. 29.10.2020 from
+              https://unsplash.com/photos/h0HE-fhx2wg
+            </li>
+            <li>
+              [5]: Sachs Sebastian, Nozzle. 31.03.2022 from
+              https://github.com/Toastiiiis/3D-printerPresentation/tree/main/presentation%203D%20printers
+            </li>
+            <li>
+              [6]: Altered Version of: New Data Services, 3D print in
+              progress. 29.10.2020 from
+              https://unsplash.com/photos/h0HE-fhx2wg
+            </li>
+            <li>
+              [7]: Kholoudabdolqader, Filament Driver diagram.jpg. 21.12.2015
+              from
+              https://commons.wikimedia.org/wiki/File:Filament_Driver_diagram.jpg
+            </li>
+            <li>
+              [8]: Altered version of: Shpetrosko, Schematic for 3D printing
+              using HARP. 26.05.2020 from
+              https://commons.wikimedia.org/wiki/File:High-area_rapid_printing_(HARP),_Figure_2.jpg
+            </li>
+            <li>
+              [9]: Altered version of: Shpetrosko, Schematic for 3D printing
+              using HARP. 26.05.2020 from
+              https://commons.wikimedia.org/wiki/File:High-area_rapid_printing_(HARP),_Figure_2.jpg
+            </li>
+          </ul>
+        </section>
+        <section data-state="make-it-pop">
+          <h4>Images</h4>
+          <ul style="font-size: 1.1rem !important">
+            <li>
+              {1}: Gano Shawn, Baby Groot, 3D Printing Time Lapse. 11.02.2017 from
+              https://www.youtube.com/watch?v=m_QhY1aABsE
+            </li>
+            <li>
+              {2}: TITANS of CNC MACHINING, 3D Printing an INSANE Steel Part that's IMPOSSIBLE to Make on a CNC Machine.
+              01.12.2021 from https://www.youtube.com/watch?v=lnE1om0KM5c
+            </li>
+            <li>{3}: Wonder World, 3D Printed Concrete House, Printed in 48 hours. 04.08.2021 from
+              https://www.youtube.com/watch?v=5IxVPpkkWXI</li>
+          </ul>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+    });
+  </script>
+</body>
+
+</html>
