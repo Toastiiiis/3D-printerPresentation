@@ -224,6 +224,28 @@
           </h4>
           <ul></ul>
         </section>
+        <section data-state="make-it-pop">
+          <h3>Inspecting the model</h3>
+          <div class="container">
+            <div class="col flex-70">
+              <div class="verti-multi">
+                <p>3D printing has its caveats:</p>
+                <ul>
+                  <li>Overhang</li>
+                  <li>Slicer Settings</li>
+                  <ul><li>Travel Speed, Wall Thickness, Layer Height, Extrusion Speed, Infill</li></ul>
+                  <li>Filament amount</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col flex-30">
+              <div class="verti-multi">
+                <img data-src="presentation 3D printers\Overhang.PNG" class="labelled-img-30perc" />
+                <p class="img-label">[4] Overhang</p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section data-state="make-it-pop" class="half-n-half">
           <h3>Levelling the printing bed</h3>
           <div class="container">
@@ -240,7 +262,7 @@
             <div class="col flex-30">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/Levelling.jpg" class="labelled-img-30perc" />
-                <p class="img-label">[4] 3D printer anatomy</p>
+                <p class="img-label">[5] 3D printer anatomy</p>
               </div>
             </div>
           </div>
@@ -267,7 +289,7 @@
             <div class="col flex-30">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers\Nozzle.jpeg" class="labelled-img-30perc" />
-                <p class="img-label">[5] 3D printer nozzle</p>
+                <p class="img-label">[6] 3D printer nozzle</p>
               </div>
             </div>
           </div>
@@ -287,7 +309,7 @@
             <div class="col flex-30">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/Heating Bed.jpg" class="labelled-img-30perc" />
-                <p class="img-label">[6] 3D printer bed</p>
+                <p class="img-label">[7] 3D printer bed</p>
               </div>
             </div>
           </div>
@@ -310,7 +332,7 @@
             <div class="col flex-40">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/FDM.jpg" class="labelled-img-30perc" />
-                <p class="img-label">[7] FDM printer</p>
+                <p class="img-label">[8] FDM printer</p>
               </div>
             </div>
           </div>
@@ -330,7 +352,7 @@
             <div class="col flex-40">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/SLA.jpg" class="labelled-img-30perc" />
-                <p class="img-label">[8] SLA printer</p>
+                <p class="img-label">[9] SLA printer</p>
               </div>
             </div>
           </div>
@@ -350,7 +372,7 @@
             <div class="col flex-40">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/DLP.jpg" class="labelled-img-30perc" />
-                <p class="img-label">[9] DLP printer</p>
+                <p class="img-label">[10] DLP printer</p>
               </div>
             </div>
           </div>
@@ -400,7 +422,7 @@
             <div class="col flex-40">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/CartesianPrinter.PNG" class="labelled-img-30perc" />
-                <p class="img-label">[x] Cartesian Printer</p>
+                <p class="img-label">[11] Cartesian Printer</p>
               </div>
             </div>
           </div>
@@ -411,14 +433,15 @@
             <div class="col flex-60">
               <div class="verti-multi">
                 <p>
-                  A more complex printer where only the print head moves in an A,B,C direction, by adjusting the height of one, two or three of it's arms
+                  A more complex printer where only the print head moves in an A,B,C direction, by adjusting the height
+                  of one, two or three of it's arms
                 </p>
               </div>
             </div>
             <div class="col flex-40">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/DeltaPrinter.gif" class="labelled-img-30perc" />
-                <p class="img-label">[x] Delta Printer</p>
+                <p class="img-label">[12] Delta Printer <br>[13] Delta Printer printing </p>
               </div>
             </div>
           </div>
@@ -429,14 +452,35 @@
             <div class="col flex-60">
               <div class="verti-multi">
                 <p>
-                  An FDM printer (usually cartesian) which has a conveyor belt as a print bed. <br>This allows for prints of great length or mass production of many parts.
+                  An FDM printer which has a conveyor belt as a print bed. <br>This allows for prints of great length in
+                  x/y direction or continuous mass production of many parts.
                 </p>
               </div>
             </div>
             <div class="col flex-40">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/ConveyorPrinter.gif" class="labelled-img-30perc" />
-                <p class="img-label">[x] Conveyor Belt Printer</p>
+                <p class="img-label">[14] Conveyor Belt Printer</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-state="make-it-pop">
+          <h4 class="special-heading">Resin</h4>
+          <div class="container">
+            <div class="col flex-60">
+              <div class="verti-multi">
+                <p>
+                  An SLA/DLP printer which moves its bed upwards the z axis, while shooting lasers at resin in a tank
+                  to harden it. This whole process is done upside down. It also requires additional cleaning in
+                  comparison to FDM.
+                </p>
+              </div>
+            </div>
+            <div class="col flex-40">
+              <div class="verti-multi">
+                <img data-src="presentation 3D printers/ResinPrinter.gif" class="labelled-img-30perc" />
+                <p class="img-label">[15] Resin Printer</p>
               </div>
             </div>
           </div>
@@ -482,7 +526,7 @@
             <div class="col flex-50">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/Metal-Step0.gif" class="labelled-img-30perc" />
-                <p class="img-label">[10] Metal Powder Preparation</p>
+                <p class="img-label">[16] Metal Powder Preparation</p>
               </div>
             </div>
           </div>
@@ -501,7 +545,7 @@
             <div class="col flex-50">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/Metal-Step1.gif" class="labelled-img-30perc" />
-                <p class="img-label">[11] Metal Printer Deposition</p>
+                <p class="img-label">[17] Metal Printer Deposition</p>
               </div>
             </div>
           </div>
@@ -519,7 +563,7 @@
             <div class="col flex-50">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/Metal-Step2.gif" class="labelled-img-30perc" />
-                <p class="img-label">[12] Metal Printer Hardening</p>
+                <p class="img-label">[18] Metal Printer Hardening</p>
               </div>
             </div>
           </div>
@@ -537,7 +581,7 @@
             <div class="col flex-50">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/Metal-Step3.gif" class="labelled-img-30perc" />
-                <p class="img-label">[13] Metal Printing Process</p>
+                <p class="img-label">[19] Metal Printing Process</p>
               </div>
             </div>
           </div>
@@ -556,7 +600,7 @@
             <div class="col flex-50">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/Metal-Step4.gif" class="labelled-img-30perc" />
-                <p class="img-label">[14] Metal Powder Reclamation</p>
+                <p class="img-label">[20] Metal Powder Reclamation</p>
               </div>
             </div>
           </div>
@@ -603,7 +647,7 @@
             <div class="col flex-50">
               <div class="verti-multi">
                 <img data-src="presentation 3D printers/Concrete.gif" class="labelled-img-30perc" />
-                <p class="img-label">[15] Concrete printing</p>
+                <p class="img-label">[21] Concrete printing</p>
               </div>
             </div>
           </div>
@@ -669,12 +713,14 @@
                 concrete is ready for its first tenants. 30.04.2021 from
                 https://edition.cnn.com/style/article/3d-printed-house-scli-intl/index.html
               </li>
+              <li>filament2print, Tips for 3D Printing: Before Printing. 09.2017 from
+                https://filament2print.com/gb/blog/26_tips-3d-printing-before.html</li>
             </ul>
           </div>
         </section>
         <section data-state="make-it-pop">
           <h4>Images</h4>
-          <ul style="font-size: 1rem !important">
+          <ul style="font-size: 0.9rem !important">
             <li>
               Title image: ZMorph3D, Printer Technology. 20.06.2019 from
               https://pixabay.com/photos/printer-technology-3d-printer-4348150/
@@ -691,40 +737,51 @@
               [3]: Sachs Sebastian, Printing. 31.03.2022 from
               https://github.com/Toastiiiis/3D-printerPresentation/tree/main/presentation%203D%20printers
             </li>
+            <li>[4]:</li>
             <li>
-              [4]: Altered version of: New Data Services, 3D print in
+              [5]: Altered version of: New Data Services, 3D print in
               progress. 29.10.2020 from
               https://unsplash.com/photos/h0HE-fhx2wg
             </li>
             <li>
-              [5]: Sachs Sebastian, Nozzle. 31.03.2022 from
+              [6]: Sachs Sebastian, Nozzle. 31.03.2022 from
               https://github.com/Toastiiiis/3D-printerPresentation/tree/main/presentation%203D%20printers
             </li>
             <li>
-              [6]: Altered Version of: New Data Services, 3D print in
+              [7]: Altered Version of: New Data Services, 3D print in
               progress. 29.10.2020 from
               https://unsplash.com/photos/h0HE-fhx2wg
             </li>
             <li>
-              [7]: Kholoudabdolqader, Filament Driver diagram.jpg. 21.12.2015
+              [8]: Kholoudabdolqader, Filament Driver diagram.jpg. 21.12.2015
               from
               https://commons.wikimedia.org/wiki/File:Filament_Driver_diagram.jpg
-            </li>
-            <li>
-              [8]: Altered version of: Shpetrosko, Schematic for 3D printing
-              using HARP. 26.05.2020 from
-              https://commons.wikimedia.org/wiki/File:High-area_rapid_printing_(HARP),_Figure_2.jpg
             </li>
             <li>
               [9]: Altered version of: Shpetrosko, Schematic for 3D printing
               using HARP. 26.05.2020 from
               https://commons.wikimedia.org/wiki/File:High-area_rapid_printing_(HARP),_Figure_2.jpg
             </li>
-            <li>[10], [11], [12], [13], [14]: Altered Version of TRUMPF, TRUMPF Additive Fertigung: TruPrint 2000 -
+            <li>
+              [10]: Altered version of: Shpetrosko, Schematic for 3D printing
+              using HARP. 26.05.2020 from
+              https://commons.wikimedia.org/wiki/File:High-area_rapid_printing_(HARP),_Figure_2.jpg
+            </li>
+            <li>[11]: Creality, Ender 3 Pro 3D-Drucker. 09.2018 from
+              https://www.creality3dofficial.com/de/products/creality-ender-3-pro-3d-printer</li>
+            <li>[12]: Altered Version of: Physics Anonymous, S01E05 - How a Delta 3d Printer Works (The Basics, with a
+              give-away!). 07.06.2016 from https://www.youtube.com/watch?v=mfjp9i9aJDg</li>
+            <li>[13]: Altered Version of: 3DTime-lapses,Spiral Vase Time-Lapse Anycubic Kossel. 20.08.2017 from
+              https://www.youtube.com/watch?v=y9BWyktluWA</li>
+            <li>[14]: Yu-Jan, Scott, Making Furniture with a 3D Printer?! ft. CR-30. 21.07.2021 from
+              https://www.youtube.com/watch?v=iJEq-vBG1Ws&t</li>
+            <li>[15]: Altered Version of: HomemadeJam3D, Black Widow Resin 3D Print Timelapse. 21.06.2021 from
+              https://www.youtube.com/watch?v=uZrQO6pQS70</li>
+            <li>[16], [17], [18], [19], [20]: Altered Version of TRUMPF, TRUMPF Additive Fertigung: TruPrint 2000 -
               Wirtschaftlicher 3D-Druck in
               Premiumqualität. 05.12.2019 from: https://www.youtube.com/watch?v=xLe4AFEnCUE
             </li>
-            <li> [15]: Altered Version of: Techinsche Universität Dresden/CONPrint3D, Concrete 3D printing laboratory
+            <li> [21]: Altered Version of: Techinsche Universität Dresden/CONPrint3D, Concrete 3D printing laboratory
               test. 12.03.2021 from: https://www.youtube.com/watch?v=cupG7jD0324 </li>
 
           </ul>
